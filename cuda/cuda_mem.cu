@@ -1,4 +1,5 @@
 #include <cuda_runtime.h>
+#include <cublas_v2.h>
 #include "cuda_mem.h"
 
 float* cuda_malloc_float(int count){
