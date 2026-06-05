@@ -16,6 +16,8 @@
 //at a high level, tensors are just N dimensions of a matrix
 //in memoery though, we cant 1:1 map a 2x2, memoery is innately flat
 //so we need to store the metadata of this N dimensional matrix
+//as for the "striding" over this 1d array to mimic how it would be in the actual array
+//we did that already in CUDA
 typedef struct{
     //actual data, stored as a 1D array
     float* data;
